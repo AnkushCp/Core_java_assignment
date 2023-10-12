@@ -1,10 +1,11 @@
 package com.java.assign;
 
 public class CustomerDetails {
-	private String customerName="";
-	private long phoneNumber=0;
-	private String address="";
+	private String customerName;
+	private long phoneNumber;
+	private String address;
 	
+
 	public String getCustomerName() {
 		return customerName;
 	}
@@ -29,11 +30,19 @@ public class CustomerDetails {
 		this.address = address;
 	}
 
-	public CustomerDetails(String customerName,long phoneNumber, String address)
-	{
-		this.phoneNumber=phoneNumber;
-		this.address=address;
-		this.customerName=customerName;
+	public CustomerDetails(String customerName, long phoneNumber, String address) {
+		super();
+		this.customerName = customerName;
+		this.phoneNumber = phoneNumber;
+		this.address = address;
 	}
+
+//	public CustomerDetails(String customerName,long phoneNumber, String address)
+//	{
+//		super();
+//		this.phoneNumber=phoneNumber;
+//		this.address=address;
+//		this.customerName=customerName;
+//	}
 
 }

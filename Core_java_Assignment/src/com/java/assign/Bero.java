@@ -35,12 +35,12 @@ public abstract class Bero {
 		this.price = price;
 	}
 
-
-	public Bero(String beroType,String beroColour, double price) {
+	public abstract void calculatePrice();
+	public Bero(String beroType,String beroColour) {
 		
 		this.beroType=beroType;
 		this.beroColour=beroColour;
-		this.price=price;
+
 	}
 
 }
